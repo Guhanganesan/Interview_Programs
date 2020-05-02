@@ -49,21 +49,21 @@ public class Calculator {
 			case 1:
 				
 				res=cal.add(a,b);
-			    System.out.println("Addition of two number is : "+res);
-			    break;
+			    	System.out.println("Addition of two number is : "+res);
+			   	break;
 			case 2:
 				res=cal.sub(a,b);
-			    System.out.println("Subtraction of two number is : "+res);
-			    break;
-		  case 3:
+			    	System.out.println("Subtraction of two number is : "+res);
+			    	break;
+		  	case 3:
 				
 				res=cal.multiply(a,b);
-			    System.out.println("Multiplication of two number is : "+res);
-			    break;
+			    	System.out.println("Multiplication of two number is : "+res);
+			    	break;
 			case 4:
 				res=cal.divide(a,b);
-			    System.out.println("Division of two number is : "+res);
-			    break;
+			    	System.out.println("Division of two number is : "+res);
+			    	break;
 			case 5:
 				status=1;
 				System.out.println("Thank You");
