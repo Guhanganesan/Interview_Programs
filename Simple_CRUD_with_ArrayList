@@ -1,0 +1,96 @@
+import java.util.*;
+import java.util.Map.Entry;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+
+	
+
+
+		static List<String> list = new ArrayList<String>();
+
+		static void insert(String ele) {
+			list.add(ele);
+			
+		}
+
+		static void update(int index, String element) {
+			list.set(index, element);
+			
+		}
+
+		static void delete(int index) {
+			
+			list.remove(index);
+
+		}
+		static void retrieve() {
+
+		}
+		static void display() {
+			System.out.println(list);
+		}
+		
+
+		public static void main( String[] args )
+		{
+
+			Scanner sc= new Scanner(System.in);
+		
+			App a= new App();
+			int temp=0;//6
+			
+			while(temp==0) {
+				
+				System.out.println("enter the option");
+				
+				System.out.println("1 for insert record");
+				System.out.println("2 for update record");
+				System.out.println("3 for delete record");
+				System.out.println("4 for retrieve record");
+				System.out.println("5 for display record");
+				System.out.println("6 for exit");
+				
+				int s= sc.nextInt();
+
+				switch(s){
+
+				case 1 ://temp=0
+					for(int i=1; i<=4; i++) {
+					
+					System.out.println("Enter element");
+					String ele= sc.next();
+					a.insert(ele); //Ram ->Harish
+					
+					}
+					break;
+				case 2:
+					System.out.println("Enter index ");
+					int index=sc.nextInt();
+					System.out.println("Enter element");
+					String element=sc.next();
+					a.update(index, element);
+					
+					
+				case 3:
+					System.out.println("Enter index ");
+					int indexdelete=sc.nextInt();
+					a.delete(indexdelete);
+
+				case 5://temp=0
+					a.display();
+					break;
+			
+				case 6:
+					temp=6;
+					break;
+				
+				}
+				
+			}
+		}
+}
